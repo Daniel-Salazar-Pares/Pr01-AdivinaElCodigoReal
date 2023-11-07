@@ -1,0 +1,59 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+main {
+    flex-wrap: nowrap;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+}
+#titulo {
+    text-align: center;
+    margin: 5%;
+    margin-top: 2%;
+    margin-bottom: 0%;
+    color: rgb(0, 26, 255);
+    font-size: larger;
+    
+}
+#numeroOculto {
+    margin: auto;
+    text-align: center;
+    display: flex;
+    height: 150px;
+    align-items: center;
+
+}
+
+.box {
+    height: 90px;
+    width: 90px;
+    margin: auto;
+    border-radius: 15%;
+    font-size: 300%;
+    background-color: rgb(101, 181, 255);
+    text-align: center
+}
+
+.box h2 {
+    display: contents; 
+    margin-top: 10px;
+}
+#form {
+    text-align: center;
+    font-size: 30px;
+    height: auto;
+}
+#intentoUsuario {
+    text-align: center;
+    margin-top: -50px;
+}
+#imput {
+    border: 0px;
+    border-bottom: 2px solid rgb(32, 147, 255);
+    text-align: center;
+    font-size: large;
+    outline: none;
+
+}
