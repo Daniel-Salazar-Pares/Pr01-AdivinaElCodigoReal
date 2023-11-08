@@ -5,9 +5,9 @@
         <meta charset="utf-8">
         <link rel="icon" href="Images/wordleLogo.png" sizes="16x16">
         <link rel="stylesheet" href="paginaPrincipal.css">
-        <link rel="stylesheet" href="paginaPrincipal.js">
+        <script src="paginaPrincipal.js"></script>
     </head>
-    <body>
+    <body onload="numeroAleatorio();">
         <header>
 
         </header>
@@ -39,10 +39,29 @@
                     <p>Escribe aquí un número: </p><br> 
                     <div id="intentoUsuario">
                         <input autocomplete="off" id="imput" type="text" name="intentoNumero" maxlength="5" minlength="5"> <br>
-                        <button id="comprobarNumero">Comprovar</button>
+                        <button id="comprobarNumero" onclick="botonClicado()"><span>Comprovar</span></button>
                     </div>
-                    
             </div>
+            <div id="primerIntento">
+                <p>Primer intento, buena suerte!</p>
+            </div>
+            <article id="intentos">
+                <div class="boxIntentos">
+                    <h2></h2>
+                </div>
+                <div class="boxIntentos">
+                    <h2></h2>
+                </div>
+                <div class="boxIntentos">
+                    <h2></h2>
+                </div>
+                <div class="boxIntentos">
+                    <h2></h2>
+                </div>
+                <div class="boxIntentos">
+                    <h2></h2>
+                </div>
+            </article>
         </main>
         <footer>
 
