@@ -98,3 +98,15 @@ main {
     place-content: center;
     margin-bottom: 10px;
 }
+#reiniciar {
+    width: 100px;
+    float: right;
+    height: 50px;
+    border: 0px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#divReiniciar :hover{
+    background-color: rgb(255, 222, 172);
+}
