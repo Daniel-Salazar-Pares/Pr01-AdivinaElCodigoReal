@@ -1,7 +1,7 @@
 html {
     font-family: 'Times New Roman', Times, serif;
-    
 }
+
 main {
     flex-wrap: nowrap;
     width: 500px;
@@ -15,7 +15,6 @@ main {
     margin-bottom: 0%;
     color: rgb(32, 166, 255);
     font-size: larger;
-    
 }
 #numeroOculto {
     margin: auto;
@@ -42,7 +41,6 @@ main {
     height: auto;
     border: 2px solid rgb(32, 184, 255);
     border-radius: 15px;
-
 }
 #intentoUsuario {
     text-align: center;
@@ -54,7 +52,6 @@ main {
     text-align: center;
     font-size: large;
     outline: none;
-
 }
 #comprobarNumero {
     width: 80%;
@@ -65,11 +62,17 @@ main {
     border-radius: 8px;
     cursor: pointer;
 }
+
 #comprobarNumero span {
     font-size: large;
     color: white;
 }
-#primerIntento {
+
+#botton :hover{
+    background-color: rgb(33, 155, 255);
+}
+
+#divMensaje {
     margin-top: 5px;
     background-color: rgb(255, 49, 49);
     color: white;
@@ -79,8 +82,9 @@ main {
     display: grid;
     place-content: center;
 }
-#intentos {
+#divIntentos {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 10px;
 }
 .boxIntentos {
@@ -92,4 +96,5 @@ main {
     background-color: rgb(151, 151, 151);
     display: grid;
     place-content: center;
+    margin-bottom: 10px;
 }
