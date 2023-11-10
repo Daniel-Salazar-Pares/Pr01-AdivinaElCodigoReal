@@ -1,12 +1,15 @@
-var oculto = numeroAleatorio();
-console.log(oculto);
+var oculto;
 var intentoMaximos = 5;
 var intentoActual = 0;
 var lletresCorrectes = 0;
 
+
+
 function numeroAleatorio() {
   let aleatorio = Math.floor(10000 + Math.random() * 90000);
-  return aleatorio;
+  console.log(aleatorio)
+  alert("Numero generat correctament")
+  oculto = aleatorio
 }
 
 function comprobarNumero() {
@@ -18,8 +21,15 @@ function comprobarNumero() {
   let correcto;
   
   for (let f = 0; f < 5; f++) {
-
-    intento = Number(imput[f]);
+    intento = Number(imput[f]); 
+    if (!intento) {
+      if (intento != 0) {
+        console.log(intento)
+        alert("INTRODUCE UN NUMERO VALIDO")
+        return;
+      }
+      
+    }
     correcto = (oculto % posicion - oculto % (posicion / 10)) / (posicion / 10);
     posicion = posicion / 10;
 
@@ -29,14 +39,11 @@ function comprobarNumero() {
     document.getElementById("divIntentos").appendChild(nouDiv);
 
     if (intento == correcto) {
-      console.log("Son iguales " + intento);
       nouDiv.style.backgroundColor = "green";
       lletresCorrectes++;
     } else {
-      console.log("No iguales");
       let numeroString = oculto.toString();
       if (numeroString.includes(intento)) {
-        console.log("Pero lo lo incluye");
         nouDiv.style.backgroundColor = "yellow";
       }
     }
@@ -85,4 +92,7 @@ function mensajeFinJuego () {
 
 function mensajeSinIntentos () {
   alert("T'HAS QUEDAT SENSE INTENTS!");
+}
+function reiniciar () {
+  location.reload()
 }
