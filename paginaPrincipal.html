@@ -7,65 +7,55 @@
         <link rel="stylesheet" href="paginaPrincipal.css">
         <script src="paginaPrincipal.js"></script>
     </head>
-    <body onload="numeroAleatorio();">
-        <header>
+   </head>
+<body onload="numeroAleatorio();">
+    <header>
 
-        </header>
-        <nav>
+    </header>
+    <nav>
 
-        </nav>
-        <main>
-            <div id="titulo">
-                <h1 >Adivina el número secreto</h1>
+    </nav>
+    <main>
+        <div id="titulo">
+            <h1 >Adivina el número secret</h1>
+        </div>
+        <article id="numeroOculto">
+            <div class="box">
+                <h2 id="asteriscoPrimero">*</h2>
             </div>
-            <article id="numeroOculto">
-                <div class="box">
-                    <h2>*</h2>
-                </div>
-                <div class="box">
-                    <h2>*</h2>
-                </div>
-                <div class="box">
-                    <h2>*</h2>
-                </div>
-                <div class="box">
-                    <h2>*</h2>
-                </div>
-                <div class="box">
-                    <h2>*</h2>
-                </div>
-            </article>
-            <div id="form">
-                    <p>Escribe aquí un número: </p><br> 
-                    <div id="intentoUsuario">
-                        <input autocomplete="off" id="imput" type="text" name="intentoNumero" maxlength="5" minlength="5"> <br>
-                        <button id="comprobarNumero" onclick="botonClicado()"><span>Comprovar</span></button>
+            <div class="box">
+                <h2 id="asteriscoSegundo">*</h2>
+            </div>
+            <div class="box">
+                <h2 id="asteriscoTercero">*</h2>
+            </div>
+            <div class="box">
+                <h2 id="asteriscoQuarto">*</h2>
+            </div>
+            <div class="box">
+                <h2 id="asteriscoQuinto">*</h2>
+            </div>
+        </article>
+        <div id="form">
+                <p>Escriu un número: </p><br> 
+                <div id="intentoUsuario">
+                    <div>
+                        <input autocomplete="off" id="imput" type="text" name="intentoNumero" maxlength="5" minlength="5"><br>
                     </div>
-            </div>
-            <div id="primerIntento">
-                <p>Primer intento, buena suerte!</p>
-            </div>
-            <article id="intentos">
-                <div class="boxIntentos">
-                    <h2></h2>
+                    <div id="botton">
+                         <button id="comprobarNumero" onclick="comprobarNumero()"><span>Comprova</span></button>
+                    </div>
                 </div>
-                <div class="boxIntentos">
-                    <h2></h2>
-                </div>
-                <div class="boxIntentos">
-                    <h2></h2>
-                </div>
-                <div class="boxIntentos">
-                    <h2></h2>
-                </div>
-                <div class="boxIntentos">
-                    <h2></h2>
-                </div>
-            </article>
-        </main>
-        <footer>
+        </div>
+        <div id="divMensaje">
+            <p id="mensaje">Tens 5 intents, molta sort!</p>
+        </div>
+        <div id="divIntentos">
+            
+        </div>
+    </main>
+    <footer>
 
-        </footer>
-    </body>
-    
+    </footer>
+</body>
 </html>
